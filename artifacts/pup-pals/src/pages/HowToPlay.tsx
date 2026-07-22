@@ -19,8 +19,8 @@ const Section = ({ title, children }: { title: string; children: React.ReactNode
 
 const FAQ_ITEMS = [
   {
-    q: 'Is Pup Pals free to play?',
-    a: 'Yes! Pup Pals is completely free. No downloads, no sign-ups — just open it in your browser and start playing.',
+    q: 'Is Nintendogs free to play?',
+    a: 'Yes! Nintendogs is completely free. No downloads, no sign-ups — just open it in your browser and start playing.',
   },
   {
     q: 'Will my puppy be saved if I close the browser?',

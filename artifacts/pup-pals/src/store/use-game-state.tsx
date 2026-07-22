@@ -41,8 +41,8 @@ export function GameStateProvider({ children }: { children: React.ReactNode }) {
 
   // Load from localStorage on mount
   useEffect(() => {
-    const savedPuppy = localStorage.getItem('pup_pals_puppy');
-    const savedLeaderboard = localStorage.getItem('pup_pals_leaderboard');
+    const savedPuppy = localStorage.getItem('nintendogs_puppy');
+    const savedLeaderboard = localStorage.getItem('nintendogs_leaderboard');
     
     if (savedLeaderboard) {
       setLeaderboard(JSON.parse(savedLeaderboard));
@@ -69,9 +69,9 @@ export function GameStateProvider({ children }: { children: React.ReactNode }) {
   // Save to localStorage when state changes
   useEffect(() => {
     if (puppy) {
-      localStorage.setItem('pup_pals_puppy', JSON.stringify({ ...puppy, lastUpdated: Date.now() }));
+      localStorage.setItem('nintendogs_puppy', JSON.stringify({ ...puppy, lastUpdated: Date.now() }));
     }
-    localStorage.setItem('pup_pals_leaderboard', JSON.stringify(leaderboard));
+    localStorage.setItem('nintendogs_leaderboard', JSON.stringify(leaderboard));
   }, [puppy, leaderboard]);
 
   // Periodic decay while playing (every 1 minute)

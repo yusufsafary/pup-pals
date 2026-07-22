@@ -40,7 +40,7 @@ export default function HomePage() {
 
       <div className="space-y-3 max-w-xl">
         <h1 className="text-5xl md:text-7xl font-bold font-display text-primary drop-shadow-sm">
-          Pup Pals
+          Nintendogs
         </h1>
         <p className="text-xl md:text-2xl text-muted-foreground font-semibold">
           Your virtual best friend, right in your browser.
@@ -72,7 +72,7 @@ export default function HomePage() {
       </div>
 
       {/* How it works */}
-      <section className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 text-left w-full max-w-3xl" aria-label="How Pup Pals works">
+      <section className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 text-left w-full max-w-3xl" aria-label="How Nintendogs works">
         <div className="bg-white p-6 rounded-3xl border-4 border-border chunky-shadow">
           <div className="bg-primary/20 w-12 h-12 rounded-2xl flex items-center justify-center text-primary text-2xl mb-4 font-display font-bold">1</div>
           <h2 className="text-xl font-bold font-display mb-2">Adopt</h2>
