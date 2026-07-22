@@ -11,6 +11,7 @@ import MinigameFetch from '@/pages/MinigameFetch';
 import MinigameTricks from '@/pages/MinigameTricks';
 import MinigameGrooming from '@/pages/MinigameGrooming';
 import LeaderboardPage from '@/pages/Leaderboard';
+import HowToPlayPage from '@/pages/HowToPlay';
 import NotFound from '@/pages/not-found';
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ function Router() {
       <Route path="/minigames/tricks" component={MinigameTricks} />
       <Route path="/minigames/grooming" component={MinigameGrooming} />
       <Route path="/leaderboard" component={LeaderboardPage} />
+      <Route path="/how-to-play" component={HowToPlayPage} />
       <Route component={NotFound} />
     </Switch>
   );
